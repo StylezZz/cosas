@@ -5,7 +5,126 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+/*DESKTOP DESIGN*/
 
+body{
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.container .calculadora{
+    width: 400px;
+    height: 600px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.calculadora .botones{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+button{
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    background-color: #999900;
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+    background-color: rgb(51,51,51);
+    width: 80px;
+    height: 80px;
+}
+
+.numero{
+    font-size: 2.5rem;
+}
+
+
+.display{
+    color: white;
+    font-size: 4.5rem;
+    text-align: right;
+    font-weight: 300;
+}
+
+.display .display__despues{
+    margin-right: 20px;
+    padding-left: 50px;
+}
+
+.cero{
+    grid-column: span 2;
+    width: 100%;
+    border-radius: 50px;
+    text-align: left;
+    padding-left: 30px;
+}
+
+
+.operacion{
+    background-color: rgb(255, 150, 1);
+    font-size: 2rem;
+    padding-bottom: 10px;
+}
+
+.plomo{
+    background-color: rgb(166,166,166);
+    color: rgb(0,0,0);
+    font-weight: normal;
+}
+
+.resolver{
+    background-color: rgb(255,150,1);
+    font-size: 2.5rem;
+}
+
+.numero:active{
+    background-color: rgb(169,169,169);
+}
+
+.borrar-todo{
+    font-size: 2rem;
+}
+
+.operacion:active{
+    background-color: rgb(255,255,255);
+    color: rgb(255, 150, 1);
+}
+
+.resolver:active{
+    background-color: rgb(255,255,255);
+    color: rgb(255, 150,1);
+}
+
+.plomo:active{
+    background-color: rgb(255,255,255);
+    color: rgb(0,0,0);
+}
+
+.punto:active{
+    background-color: rgb(169,169,169);
+}
+/*MOBILE DESING
+Para tablet no estaba seguro si existía una versión de la
+calculadora de Apple para tablet, luego de googlearla
+encontre que no existe, por lo que no hice el diseño para tablet
+*/
 @media (max-width: 450px){
     body{
         background-color: #000000;
@@ -87,44 +206,6 @@
         background-color: rgb(166,166,166);
         color: rgb(0,0,0);
         font-weight: 500;
-    }
-    
-    
-    
-    .numero:active{
-        background-color: rgb(169,169,169);
-    }
-    
-    .borrar-todo{
-        font-size: 2rem;
-    }
-    
-    .positivo-negativo{
-        font-size: 2.5rem;
-    }
-    
-    
-    .operacion:active{
-        background-color: rgb(255,255,255);
-        color: rgb(255, 150, 1);
-    }
-    
-    .resolver{
-        background-color: rgb(255,150,1);
-        font-size: 2.5rem;
-    }
-    
-    .resolver:active{
-        background-color: rgb(255,255,255);
-        color: rgb(255, 150,1);
-    }
-    .plomo:active{
-        background-color: rgb(180,180,180);
-        color: rgb(255,255,255);
-    }
-    
-    .punto:active{
-        background-color: rgb(169,169,169);
     }
 }
 
