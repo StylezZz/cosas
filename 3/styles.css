@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #fdc830; /* fallback for old browsers */ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f1f1f1;
+}
+
+#header {
+  background-color: #ffcc80;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 85px;
+  padding: 5px 10%;
+}
+
+#header .logo {
+  margin-right: auto;
+  background-color: inherit;
+}
+
+#header .logo img {
+  height: 80px;
+  width: 90px;
+  border-radius: 50%;
+  transition: all 0.5s;
+}
+
+#header .logo img:hover {
+  transform: scale(1.1);
+}
+
+#header #nav-bar ul {
+  list-style: none;
+  background-color: #ffcc80;
+}
+
+#header #nav-bar ul li a{
+    background-color: #ffcc80;
+}
+
+#header #nav-bar li {
+  display: inline-block;
+  margin: 0 70px;
+  background-color: inherit;
+}
+
+#header #nav-bar .nav-link {
+  font-size: 700;
+  color: #000;
+  text-decoration: none;
+}
+
+#header #nav-bar li:hove {
+  transform: scale(1.19);
+}
+
+#header #nav-bar .nav-link:hover {
+  color: #ff5722;
+}
+
+#main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#main .caja-formulario h1{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #000;
+}
+
+#main .caja-formulario #form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type=email] {
+    margin-bottom: 10px;
+    background-color: white;
+    padding: 8px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+input[type=submit]{
+    margin-top: 10px;
+    background-color: darkorange;
+    padding: 8px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: 15px;
+}
+
+input[type=submit]:hover{
+    background-color: #ff5722;
+}
