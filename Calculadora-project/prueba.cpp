@@ -19,7 +19,7 @@ void hallarCategoria(char *cadena,char &categoria){
     i=0;
     // Cambiar formato:
     for(int i=0;cadena[i];i++){
-        if(cadena[i]=='_' or cadena[i]=='-'){
+        if(cadena[i]=='_'){
             cadena[i]=' ';
         }
     }
